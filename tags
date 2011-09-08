@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AR	Makefile	/^AR        = ar$/;"	m
+ARFLAGS	Makefile	/^ARFLAGS   = -cru$/;"	m
+BIN	Makefile	/^BIN= .\/bin$/;"	m
+CC	Makefile	/^CC        = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS    = $(DEBUG) $(OPT) $(DEFINES) $(INCLUDE)$/;"	m
+CLIENT_IP	test_app.h	4;"	d
+CLIENT_PORT	test_app.h	6;"	d
+CP	Makefile	/^CP = cp$/;"	m
+DEBUG	Makefile	/^DEBUG     =  -g$/;"	m
+DEFINES	Makefile	/^DEFINES   =$/;"	m
+GI	test_app.h	10;"	d
+GN	test_app.h	9;"	d
+INCLUDE	Makefile	/^INCLUDE   = -I.$/;"	m
+INIT	test_app.h	/^  INIT,$/;"	e	enum:app_fsm
+LIBS	Makefile	/^LIBS      = -l$(UTCP_LIB_FILE)$/;"	m
+LIBS	Makefile	/^LIBS= $(UTCP_SRC)\/libs$/;"	m
+LIB_LIST	Makefile	/^LIB_LIST= $(LIBS)\/list$/;"	m
+LIB_TIMER	Makefile	/^LIB_TIMER= $(LIBS)\/timer$/;"	m
+MV	Makefile	/^MV = mv$/;"	m
+OPT	Makefile	/^OPT       = -O3$/;"	m
+PKT_ACK	test_app.h	/^  PKT_ACK,$/;"	e	enum:app_fsm
+PKT_SYN	test_app.h	/^  PKT_SYN,$/;"	e	enum:app_fsm
+PKT_SYNACK	test_app.h	/^  PKT_SYNACK,$/;"	e	enum:app_fsm
+POST_PROXY	test_app.h	/^  POST_PROXY$/;"	e	enum:app_fsm
+PROXY	test_app.h	/^  PROXY,$/;"	e	enum:app_fsm
+RM	Makefile	/^RM = rm -f$/;"	m
+SERVER_IP	test_app.h	5;"	d
+SERVER_PORT	test_app.h	7;"	d
+SOCK	test_app.c	5;"	d	file:
+UTCP_LIB_DIR	Makefile	/^UTCP_LIB_DIR= .\/obj$/;"	m
+UTCP_LIB_FILE	Makefile	/^UTCP_LIB_FILE= utcp$/;"	m
+UTCP_OBJ_DIR	Makefile	/^UTCP_OBJ_DIR= .\/obj$/;"	m
+UTCP_SRC	Makefile	/^UTCP_SRC=.\/source$/;"	m
+__TESTAPP_H__	test_app.h	2;"	d
+app_fsm	test_app.h	/^enum app_fsm$/;"	g
+app_fsm_t	test_app.h	/^typedef enum app_fsm app_fsm_t;$/;"	t	typeref:enum:app_fsm
+main	test_app.c	/^int main()$/;"	f
+pkt_cnt	test_app.h	/^  uint16 pkt_cnt;$/;"	m	struct:proxy_app
+ppproxy_app	test_app.h	/^typedef struct proxy_app** ppproxy_app;$/;"	t	typeref:struct:proxy_app
+pproxy_app	test_app.h	/^typedef struct proxy_app* pproxy_app;$/;"	t	typeref:struct:proxy_app
+ppsock	test_app.h	/^typedef struct proxy_socket** ppsock;$/;"	t	typeref:struct:proxy_socket
+proxy	test_app.h	/^proxy_app_t proxy;$/;"	v
+proxy_app	test_app.h	/^struct proxy_app$/;"	s
+proxy_app_deinit	test_app.c	/^int proxy_app_deinit(void)$/;"	f
+proxy_app_init	test_app.c	/^int proxy_app_init(void)$/;"	f
+proxy_app_recv	test_app.c	/^void proxy_app_recv(void *tcp_sk, uint8* data, uint16 len, void *pktuserptr, void *data_to_app_ptr, void *user_peer_ptr)$/;"	f
+proxy_app_stack_send	test_app.c	/^void proxy_app_stack_send(void *tcp_sk, uint8* ippkt, uint16 len, void* packet_out_ptr, void *user_peer_ptr)$/;"	f
+proxy_app_t	test_app.h	/^typedef struct proxy_app proxy_app_t;$/;"	t	typeref:struct:proxy_app
+proxy_sock	test_app.h	/^typedef struct proxy_socket proxy_sock;$/;"	t	typeref:struct:proxy_socket
+proxy_socket	test_app.h	/^struct proxy_socket$/;"	s
+psock	test_app.h	/^typedef struct proxy_socket* psock;$/;"	t	typeref:struct:proxy_socket
+sk	test_app.h	/^  void *sk;$/;"	m	struct:proxy_socket
+sock	test_app.h	/^  proxy_sock sock[2];$/;"	m	struct:proxy_app
+state	test_app.h	/^  app_fsm_t state;$/;"	m	struct:proxy_app
+stub_incoming_pkt	test_app.c	/^int stub_incoming_pkt(uint8* pkt, uint16 len)$/;"	f

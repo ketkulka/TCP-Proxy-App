@@ -1,0 +1,18 @@
+*********** TCP Proxy Application *****************
+Author: Ketan Kulkarni
+Contact: ketan138@gmail.com
+Date: 9th Sept 2011
+***************************************************
+
+
+This is the test application. The application is actually a TCP proxy
+transperant to client and server.
+
+The application makes use of TCP Shim Layer Project
+
+https://github.com/ketan138/TCP-Shim-Layer
+
+
+DEPENDENCY:
+This application requires the libipq library and libutcp library for compilation.
+***************************************************
